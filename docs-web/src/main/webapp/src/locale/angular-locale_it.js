@@ -26,91 +26,91 @@ $provide.value("$locale", {
       "PM"
     ],
     "DAY": [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
+      "domenica",
+      "luned\u00ec",
+      "marted\u00ec",
+      "mercoled\u00ec",
+      "gioved\u00ec",
+      "venerd\u00ec",
+      "sabato"
     ],
     "ERANAMES": [
-      "Before Christ",
-      "Anno Domini"
+      "avanti Cristo",
+      "dopo Cristo"
     ],
     "ERAS": [
-      "BC",
-      "AD"
+      "a.C.",
+      "d.C."
     ],
-    "FIRSTDAYOFWEEK": 6,
+    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December"
+      "gennaio",
+      "febbraio",
+      "marzo",
+      "aprile",
+      "maggio",
+      "giugno",
+      "luglio",
+      "agosto",
+      "settembre",
+      "ottobre",
+      "novembre",
+      "dicembre"
     ],
     "SHORTDAY": [
-      "Sun",
-      "Mon",
-      "Tue",
-      "Wed",
-      "Thu",
-      "Fri",
-      "Sat"
+      "dom",
+      "lun",
+      "mar",
+      "mer",
+      "gio",
+      "ven",
+      "sab"
     ],
     "SHORTMONTH": [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
+      "gen",
+      "feb",
+      "mar",
+      "apr",
+      "mag",
+      "giu",
+      "lug",
+      "ago",
+      "set",
+      "ott",
+      "nov",
+      "dic"
     ],
     "STANDALONEMONTH": [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December"
+      "gennaio",
+      "febbraio",
+      "marzo",
+      "aprile",
+      "maggio",
+      "giugno",
+      "luglio",
+      "agosto",
+      "settembre",
+      "ottobre",
+      "novembre",
+      "dicembre"
     ],
     "WEEKENDRANGE": [
       5,
       6
     ],
-    "fullDate": "EEEE, MMMM d, y",
-    "longDate": "MMMM d, y",
-    "medium": "MMM d, y h:mm:ss a",
-    "mediumDate": "MMM d, y",
-    "mediumTime": "h:mm:ss a",
-    "short": "yy/M/d h:mm a",
-    "shortDate": "yyyy/MM/dd",
-    "shortTime": "h:mm a"
+    "fullDate": "EEEE d MMMM y",
+    "longDate": "d MMMM y",
+    "medium": "dd MMM y HH:mm:ss",
+    "mediumDate": "dd MMM y",
+    "mediumTime": "HH:mm:ss",
+    "short": "dd/MM/yy HH:mm",
+    "shortDate": "dd/MM/yy",
+    "shortTime": "HH:mm"
   },
   "NUMBER_FORMATS": {
-    "CURRENCY_SYM": "$",
-    "DECIMAL_SEP": ".",
-    "GROUP_SEP": ",",
+    "CURRENCY_SYM": "\u20ac",
+    "DECIMAL_SEP": ",",
+    "GROUP_SEP": ".",
     "PATTERNS": [
       {
         "gSize": 3,
@@ -129,15 +129,15 @@ $provide.value("$locale", {
         "maxFrac": 2,
         "minFrac": 2,
         "minInt": 1,
-        "negPre": "-\u00a4",
-        "negSuf": "",
-        "posPre": "\u00a4",
-        "posSuf": ""
+        "negPre": "-",
+        "negSuf": "\u00a0\u00a4",
+        "posPre": "",
+        "posSuf": "\u00a0\u00a4"
       }
     ]
   },
-  "id": "en",
-  "localeID": "en",
+  "id": "it",
+  "localeID": "it",
   "pluralCat": function(n, opt_precision) {  var i = n | 0;  var vf = getVF(n, opt_precision);  if (i == 1 && vf.v == 0) {    return PLURAL_CATEGORY.ONE;  }  return PLURAL_CATEGORY.OTHER;}
 });
 }]);
